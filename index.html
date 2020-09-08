@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto GIFOS</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./js/clases.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header class="light" id="header">
+            <nav class="nav">
+                <div class="logo light">
+                    <a href="javascript:location.reload()"><img id="logoPpal" src="./assets/icons/logo-mobile.svg" alt="logo_mobile"></a>
+                    <div id="burger" class="burger"></div>
+                </div>
+                <div class="menu light off" id="menu">
+                    <ul class="light">
+                        <li><a id="mode" href="javascript:switchTheme()">Modo Nocturno</a><span></span></li>
+                        <li><a href="javascript:clearFav()">Favoritos</a><span></span></li>
+                        <li><a href="javascript:clearGifos()">Mis GIFOS</a><span></span></li>
+                        <li><a href="javascript:clearCrearGifos()"><img class="light" src="./assets/icons/button-crear-gifo.svg" alt="add"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="inspirate" class="light">
+                <img class="iconFav" src="./assets/icons/icon-favoritos.svg" alt="SinFav">
+                <h1>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span></h1>
+                <img class="ilustra" src="./assets/icons/ilustra_header.svg" alt="ilustra_header">
+                <div id="cont-list" class="cont-list light">
+                    <ul id="itemSug">
+                        <li id="first"><input type="text" id="search" class="light" placeholder="Busca GIFOS y más"></li>
+                    </ul>
+                </div>
+                <h3>Trending:</h3>
+                <div id="reactions">
+                    <p id="options">Reactions, Entertainment, Sports, Stickers, Artists</p>
+                </div>
+                <span id="span"></span>
+                <h2 id="title" class="light"></h2>
+                <div id="results"></div>
+                <button id="see" class="light">VER MÁS</button>
+            </section>
+            <section id="trending" class="light">
+                <h2>Trending GIFOS</h2>
+                <h4>Mira los últimos GIFOS de nuestra comunidad.</h4>
+                <div id="content" class="content">
+                    <img id="prev" class="light" src="./assets/icons/button-slider-left.svg" alt="previus">
+                    <ul id="galery">
+                        
+                    </ul>
+                    <img id="next" class="light" src="./assets/icons/button-slider-right.svg" alt="next">
+                </div>
+            </section>
+            <div id="full-screen">
+                
+            </div>
+        </main>
+        <footer class="light">
+            <div class="redes">
+                <p id="p1">Compartir en:</p>
+                <a href="https://www.facebook.com"><img class="light redesIcon" id="facebook" src="./assets/icons/icon_facebook.svg" alt="facebook"></a>
+                <a href="https://www.twitter.com"><img class="light redesIcon" id="twitter" src="./assets/icons/icon-twitter.svg" alt="twitter"></a>
+                <a href="https://www.instagram.com/"><img class="light redesIcon" id="instagram" src="./assets/icons/icon_instagram.svg" alt="instagram"></a>
+            </div>
+            <p id="p2">© GIFOS 2020 All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/buscar.js"></script>
+    <script src="./js/favoritos.js"></script>
+    <script src="./js/misGifos.js"></script>
+    <script src="./js/crearGif.js"></script>
+</body>
+</html>

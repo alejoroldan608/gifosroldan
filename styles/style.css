@@ -1,0 +1,1564 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#container header nav .menu {
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 60px;
+}
+
+#container main #inspirate h1 {
+  color: #572EE5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+#container main #inspirate .cont-list #itemSug #first input {
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+}
+
+#container main #inspirate #title, #container main #trending h2 {
+  color: #572EE5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+}
+
+#container main #inspirate h3 {
+  color: #572EE5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+
+#container main #inspirate #reactions a {
+  color: #572EE5;
+  font-family: 'Montserrat-medium', sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 25px;
+  text-align: center;
+}
+
+#container main #trending h4 {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+}
+
+#container footer #p1 {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0;
+}
+
+#container footer #p2 {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+#container header nav .menu ul li a {
+  color: #FFF;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+#container header {
+  width: 100%;
+  height: 95px;
+  position: fixed;
+  top: 0;
+  background: #FFF;
+  border-top: 5px solid #572EE5;
+}
+
+#container header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container header nav .logo {
+  width: 100%;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container header nav .logo .burger {
+  width: 15px;
+  height: 15px;
+  background: url("../assets/icons/burger.svg") no-repeat;
+}
+
+#container header nav .logo .burgerAct {
+  background: url("../assets/icons/close.svg") no-repeat;
+}
+
+#container header nav .logo.dark #logoPpal {
+  content: url("../assets/icons/logo-mobile-modo-noct.svg");
+}
+
+#container header nav .logo.dark .burger {
+  background: url("../assets/icons/burger-modo-noct.svg") no-repeat;
+}
+
+#container header nav .logo.dark .burgerAct {
+  background: url("../assets/icons/close-modo-noct.svg") no-repeat;
+}
+
+#container header nav .off {
+  display: none;
+}
+
+#container header nav .menu {
+  width: 100%;
+  height: 500px;
+}
+
+#container header nav .menu ul {
+  width: 100%;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  background: rgba(87, 46, 229, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container header nav .menu ul li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container header nav .menu ul li:first-child {
+  padding-top: 17px;
+}
+
+#container header nav .menu ul li:last-child {
+  padding-bottom: 800px;
+}
+
+#container header nav .menu ul li span {
+  width: 41px;
+  border: 1px solid #FFF;
+  opacity: 0.5;
+}
+
+#container header nav .menu ul img {
+  display: none;
+}
+
+#container header nav .menu ul.dark {
+  background: #000;
+}
+
+#container header.dark {
+  background: #37383C;
+  border-top: 5px solid #000;
+}
+
+#container main {
+  text-align: center;
+}
+
+#container main #inspirate {
+  background: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container main #inspirate.crearGifos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container main #inspirate.dark {
+  background: #37383C;
+}
+
+#container main #inspirate.dark h1 {
+  color: #FFF;
+}
+
+#container main #inspirate.dark .search {
+  border-color: #FFF;
+}
+
+#container main #inspirate.dark .search input {
+  background-color: #37383C;
+}
+
+#container main #inspirate.dark h3 {
+  color: #FFF;
+}
+
+#container main #inspirate.dark p {
+  color: #FFF;
+}
+
+#container main #inspirate.dark #group-results #span {
+  color: #FFF;
+}
+
+#container main #inspirate.dark #group-results #title {
+  color: #FFF;
+}
+
+#container main #inspirate.dark #group-results #see {
+  background: #37383C;
+  color: #FFF;
+  border-color: #FFF;
+}
+
+#container main #inspirate.dark #group-results #see:hover {
+  background: #FFF;
+  color: #000;
+}
+
+#container main #inspirate .iconFav {
+  display: none;
+}
+
+#container main #inspirate .iconSinFav {
+  display: block;
+}
+
+#container main #inspirate h1 {
+  margin-top: 7px;
+}
+
+#container main #inspirate h1 span {
+  color: #50E3C2;
+}
+
+#container main #inspirate .ilustra {
+  width: 72.8%;
+  height: 10.8%;
+  margin-top: 31px;
+}
+
+#container main #inspirate .cont-list {
+  width: 334px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid #572EE5;
+  border-radius: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#container main #inspirate .cont-list.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container main #inspirate .cont-list.dark {
+  border-color: #FFF;
+}
+
+#container main #inspirate .cont-list #itemSug {
+  margin-left: 21px;
+}
+
+#container main #inspirate .cont-list #itemSug.after .items {
+  display: none;
+}
+
+#container main #inspirate .cont-list #itemSug.again .items {
+  display: block;
+}
+
+#container main #inspirate .cont-list #itemSug #first {
+  list-style: none;
+}
+
+#container main #inspirate .cont-list #itemSug #first input {
+  width: 307px;
+  height: 50px;
+  background: url("../assets/icons/icon-search.svg") no-repeat;
+  background-position: 97% center;
+  padding-top: 10px;
+}
+
+#container main #inspirate .cont-list #itemSug #first input.active {
+  width: 314px;
+  outline: none;
+  background: url("../assets/icons/close.svg") no-repeat;
+  background-position: 97% center;
+  border-bottom: 2px solid #9CAFC3;
+  height: 50px;
+  margin-left: -10px;
+}
+
+#container main #inspirate .cont-list #itemSug #first input:focus {
+  outline: none;
+}
+
+#container main #inspirate .cont-list #itemSug #first input.dark {
+  background: url("../assets/icons/icon-search-mod-noc.svg") no-repeat;
+  background-position: 97% center;
+  color: #FFF;
+}
+
+#container main #inspirate .cont-list #itemSug #first input.dark.active {
+  background: url("../assets/icons/close-modo-noct.svg") no-repeat;
+  background-position: 97% center;
+}
+
+#container main #inspirate .cont-list #itemSug li {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#container main #inspirate .cont-list #itemSug li:nth-child(2) {
+  margin-top: 20px;
+}
+
+#container main #inspirate .cont-list #itemSug li a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #9CAFC3;
+  text-align: left;
+  text-decoration: none;
+}
+
+#container main #inspirate .cont-list #itemSug li a img {
+  margin-right: 10px;
+}
+
+#container main #inspirate .cont-list #itemSug li a img.dark {
+  content: url("../assets/icons/icon-search-mod-noc.svg");
+}
+
+#container main #inspirate .cont-list #itemSug li a.dark {
+  color: #FFF;
+}
+
+#container main #inspirate h3 {
+  margin-top: 31px;
+}
+
+#container main #inspirate #reactions {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container main #inspirate #reactions a {
+  text-decoration: none;
+}
+
+#container main #inspirate #reactions a.dark {
+  color: #FFF;
+}
+
+#container main #inspirate #span {
+  width: 157px;
+  border: 1px solid #9CAFC3;
+  opacity: 0.5;
+  margin: auto;
+  display: none;
+}
+
+#container main #inspirate #title {
+  display: none;
+  margin: 43px 0 38px;
+  line-height: 40px;
+}
+
+#container main #inspirate #title.dark {
+  color: #FFF;
+}
+
+#container main #inspirate .not {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#container main #inspirate .not .notResults {
+  margin: 17px 0 19px;
+}
+
+#container main #inspirate .not #notResults {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #50E3C2;
+  text-align: center;
+  line-height: 18px;
+  margin-top: 19px;
+  margin-bottom: 62px;
+}
+
+#container main #inspirate .results {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 36px 21px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
+  gap: 21px 21px;
+}
+
+#container main #inspirate .results .gif {
+  width: 156px;
+  height: 120px;
+}
+
+#container main #inspirate .results .gif .over {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#container main #inspirate .results .gif .over .buttonGif {
+  display: none;
+}
+
+#container main #inspirate .results .gif .over .infoGif {
+  display: none;
+}
+
+#container main #inspirate .results img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#container main #inspirate #see {
+  display: none;
+  border: 1px solid #572EE5;
+  border-radius: 25px;
+  background: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: #572EE5;
+  text-align: center;
+  margin: 78px auto 79px;
+  padding: 16px 32px;
+}
+
+#container main #inspirate #see:hover {
+  background: #572EE5;
+  color: #FFF;
+}
+
+#container main #inspirate #see.dark {
+  background: #37383C;
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+
+#container main #inspirate #see.dark:hover {
+  background: #FFF;
+  border: 1px solid #37383C;
+  color: #000;
+}
+
+#container main #inspirate #conFav {
+  width: 80%;
+  height: 500px;
+}
+
+#container main #inspirate #logoMis {
+  margin-top: 10px;
+  width: 24px;
+  height: 22px;
+}
+
+#container main #inspirate #logoMis.dark {
+  border: solid;
+}
+
+#container main #inspirate #titleMis {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  color: #572EE5;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 8px;
+}
+
+#container main #inspirate #logoSin {
+  width: 150px;
+  height: 150px;
+  margin-top: 111px;
+}
+
+#container main #inspirate #titleAni {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #50E3C2;
+  text-align: center;
+  line-height: 20px;
+  margin: 40px 0 136px;
+}
+
+#container main #inspirate #camara {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 145px;
+}
+
+#container main #inspirate #camara #logoCam.dark {
+  content: url("../assets/icons/camara-modo-noc.svg");
+}
+
+#container main #inspirate #containerMisGifos1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla {
+  width: 688px;
+  height: 390px;
+  border: 1px solid #572EE5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla #video {
+  width: 640px;
+  height: 342px;
+  position: absolute;
+  top: 119px;
+  right: 371px;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla .corner {
+  width: 27px;
+  height: 25px;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla #esquinasSup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla #esquinasSup #supIzq {
+  border-top: 2px solid #50E3C2;
+  border-left: 2px solid #50E3C2;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla #esquinasSup #supDer {
+  border-top: 2px solid #50E3C2;
+  border-right: 2px solid #50E3C2;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla #string h4 {
+  color: #572EE5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  margin-top: 65px;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla #string #Gifos {
+  color: #50E3C2;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla #string p {
+  font-size: 16px;
+  line-height: 29px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #000;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla #esquinasInf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla #esquinasInf #infIzq {
+  border-bottom: 2px solid #50E3C2;
+  border-left: 2px solid #50E3C2;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla #esquinasInf #infDer {
+  border-bottom: 2px solid #50E3C2;
+  border-right: 2px solid #50E3C2;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+#container main #inspirate #containerMisGifos1 #contNumCrono {
+  width: 688px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container main #inspirate #containerMisGifos1 #contNumCrono #numeros {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#container main #inspirate #containerMisGifos1 #contNumCrono #numeros .num {
+  margin: auto;
+  display: block;
+  margin: 24px 26px 19px;
+}
+
+#container main #inspirate #containerMisGifos1 #contNumCrono #crono {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #572EE5;
+  letter-spacing: 0;
+  text-align: center;
+  position: relative;
+}
+
+#container main #inspirate #containerMisGifos1 #linea {
+  width: 790px;
+  border-bottom: 5px solid #572EE5;
+  border-radius: 20px;
+}
+
+#container main #inspirate #containerMisGifos1 .show {
+  font-size: 13px;
+  line-height: 16px;
+  color: #572EE5;
+  border: 1px solid #572EE5;
+  border-radius: 25px;
+  background: #FFF;
+  margin-top: 20px;
+  margin-bottom: 26px;
+  padding: 16px 22px;
+}
+
+#container main #inspirate #containerMisGifos1 .hide {
+  display: none;
+}
+
+#container main #inspirate #cinta {
+  margin-top: 300px;
+}
+
+#container main #inspirate #cinta.dark {
+  content: url("../assets/icons/pelicula-modo-noc.svg");
+}
+
+#container main #trending {
+  background: #F3F5F8;
+  overflow: hidden;
+}
+
+#container main #trending h2 {
+  padding-top: 46px;
+}
+
+#container main #trending h4 {
+  margin-top: 7px;
+}
+
+#container main #trending .content {
+  padding: 0 8px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#container main #trending .content #prev, #container main #trending .content #next {
+  display: none;
+}
+
+#container main #trending .content #galery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container main #trending .content #galery .gif {
+  width: 243px;
+  height: 187px;
+  margin: 32px 11px 82px;
+}
+
+#container main #trending .content #galery .gif img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#container main #trending .content #galery .gif .over {
+  display: none;
+}
+
+#container main #trending.dark {
+  background: #222326;
+}
+
+#container main #trending.dark h2 {
+  color: #FFF;
+}
+
+#container main #trending.dark h4 {
+  color: #FFF;
+}
+
+#container main .fullOver {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container main .fullOver .close {
+  width: 24px;
+  height: 24px;
+  background: url("../assets/icons/close.svg") no-repeat;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 64px;
+}
+
+#container main .fullOver .img-full {
+  width: 318px;
+  height: 245px;
+  margin-top: 78px;
+}
+
+#container main .fullOver .base {
+  margin-top: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#container main .fullOver .base #string #pOne {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  text-align: left;
+}
+
+#container main .fullOver .base #string #pTwo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-align: left;
+  margin-top: 6px;
+}
+
+#container main .fullOver .base #options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+#container main .fullOver .base #options .icon-full {
+  width: 36px;
+  height: 36px;
+  margin-left: 29px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#container main .fullOver .base #options .no-fav {
+  background: url("../assets/icons/icon-favoritos.svg") no-repeat;
+  background-size: contain;
+}
+
+#container main .fullOver .base #options .favorito {
+  background: url("../assets/icons/icon-fav-active.svg") no-repeat;
+  background-size: contain;
+}
+
+#container main .fullOver .base #options #down {
+  background: url("../assets/icons/icon-download.svg") no-repeat;
+  background-size: contain;
+}
+
+#container footer {
+  background: #FFF;
+  text-align: center;
+  border-bottom: 5px solid #572EE5;
+}
+
+#container footer #p1 {
+  padding-top: 47px;
+}
+
+#container footer img {
+  padding-top: 24px;
+  margin-left: 19px;
+}
+
+#container footer #p2 {
+  padding: 47.8px 0 23px;
+}
+
+#container footer.dark {
+  background: #37383C;
+  border-bottom: 5px solid #000;
+}
+
+#container footer.dark #p1 {
+  color: #FFF;
+}
+
+#container footer.dark #p2 {
+  color: #FFF;
+}
+
+@media screen and (min-width: 768px) {
+  #container {
+    max-width: 1440px;
+  }
+  #container header {
+    max-width: 1440px;
+  }
+  #container header nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #container header nav .logo {
+    width: 50%;
+    padding-left: 10.8%;
+  }
+  #container header nav .logo #logoPpal {
+    content: url("../assets/icons/logo-desktop.svg");
+  }
+  #container header nav .logo #burger {
+    display: none;
+  }
+  #container header nav .logo.dark #logoPpal {
+    content: url("../assets/icons/Logo-modo-noc.svg");
+  }
+  #container header nav .off {
+    display: none;
+  }
+  #container header nav .menu {
+    width: 100%;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #container header nav .menu ul {
+    width: 50%;
+    margin: auto;
+    background: #FFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #container header nav .menu ul li {
+    width: unset;
+    background: unset;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #container header nav .menu ul li:first-child {
+    padding-top: unset;
+  }
+  #container header nav .menu ul li:last-child {
+    padding-bottom: 0;
+  }
+  #container header nav .menu ul li a {
+    color: #572EE5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    text-decoration: none;
+  }
+  #container header nav .menu ul li a:hover {
+    border-bottom: 2px solid #5ED7C6;
+  }
+  #container header nav .menu ul li a:hover:last-child {
+    border-bottom: unset;
+  }
+  #container header nav .menu ul li a:active {
+    color: #9CAFC3;
+  }
+  #container header nav .menu ul li span {
+    display: none;
+  }
+  #container header nav .menu ul img {
+    display: block;
+  }
+  #container header nav .menu ul img:hover {
+    content: url("../assets/icons/CTA-crear-gifo-hover.svg");
+    cursor: pointer;
+  }
+  #container header nav .menu ul img:active {
+    content: url("../assets/icons/CTA-crear-gifo-active.svg");
+  }
+  #container header nav .menu ul img.dark {
+    content: url("../assets/icons/CTA-crear-gifo-modo-noc.svg");
+  }
+  #container header nav .menu ul img.dark:hover {
+    background: #37383C;
+    content: url("../assets/icons/CTA-crear-gifo-hover-modo-noc.svg");
+  }
+  #container header nav .menu ul.dark {
+    background: #37383C;
+  }
+  #container header nav .menu ul.dark li {
+    background: #37383C;
+  }
+  #container header nav .menu ul.dark a {
+    color: #FFF;
+  }
+  #container main #inspirate h1 {
+    width: 40%;
+    font-size: 35px;
+    line-height: 50px;
+    margin-top: 76px;
+  }
+  #container main #inspirate .ilustra {
+    width: 399px;
+    height: 190px;
+    margin-top: 24px;
+  }
+  #container main #inspirate .cont-list {
+    width: 551px;
+  }
+  #container main #inspirate .cont-list #itemSug {
+    margin-left: 54px;
+  }
+  #container main #inspirate .cont-list #itemSug #first {
+    list-style: none;
+  }
+  #container main #inspirate .cont-list #itemSug #first input {
+    width: 485px;
+  }
+  #container main #inspirate .cont-list #itemSug #first input.active {
+    width: 485px;
+  }
+  #container main #inspirate h3 {
+    margin-top: 73px;
+    font-size: 18px;
+  }
+  #container main #inspirate #reactions {
+    width: 500px;
+  }
+  #container main #inspirate #span {
+    width: 338px;
+    margin-top: 58px;
+  }
+  #container main #inspirate #title {
+    margin: 55px 0 82px;
+    font-size: 35px;
+    line-height: 30px;
+  }
+  #container main #inspirate .not .notResults {
+    margin: 27px 0 29px;
+  }
+  #container main #inspirate .not #notResults {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #50E3C2;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 29px;
+    margin-bottom: 112px;
+  }
+  #container main #inspirate .results {
+    margin: 36px 157px;
+    height: auto;
+    -ms-grid-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 29px 29px;
+  }
+  #container main #inspirate .results .gif {
+    width: 260px;
+    height: 200px;
+    position: relative;
+  }
+  #container main #inspirate .results .gif .over {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(87, 46, 229, 0.7);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #container main #inspirate .results .gif .over .buttonGif {
+    display: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 10px;
+  }
+  #container main #inspirate .results .gif .over .buttonGif .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+    opacity: 0.7;
+  }
+  #container main #inspirate .results .gif .over .buttonGif .icon:hover {
+    opacity: unset;
+  }
+  #container main #inspirate .results .gif .over .buttonGif .no-favorito {
+    background: url("../assets/icons/icon-fav.svg") no-repeat;
+    background-size: contain;
+  }
+  #container main #inspirate .results .gif .over .buttonGif .favorito {
+    background: url("../assets/icons/icon-fav-active.svg") no-repeat;
+    background-size: contain;
+  }
+  #container main #inspirate .results .gif .over .buttonGif .descarga {
+    background: url("../assets/icons/icon-download.svg") no-repeat;
+    background-size: contain;
+  }
+  #container main #inspirate .results .gif .over .buttonGif .full {
+    background: url("../assets/icons/icon-max-normal.svg") no-repeat;
+    background-size: contain;
+  }
+  #container main #inspirate .results .gif .over .infoGif {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 5px 5px;
+  }
+  #container main #inspirate .results .gif .over .infoGif #user {
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFF;
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+  #container main #inspirate .results .gif .over .infoGif #title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: left;
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  #container main #inspirate .results .gif:hover .over {
+    width: 100%;
+    height: 100%;
+  }
+  #container main #inspirate .results .gif:hover .over .buttonGif, #container main #inspirate .results .gif:hover .over .infoGif {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #container main #trending h2 {
+    padding-top: 67px;
+  }
+  #container main #trending h4 {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 12px;
+  }
+  #container main #trending .content {
+    position: relative;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  #container main #trending .content #prev, #container main #trending .content #next {
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+  #container main #trending .content #prev:hover, #container main #trending .content #next:hover {
+    cursor: pointer;
+  }
+  #container main #trending .content #prev:hover {
+    content: url("../assets/icons/button-slider-left-hover.svg");
+  }
+  #container main #trending .content #prev.dark {
+    content: url("../assets/icons/button-slider-left-md-noct.svg");
+  }
+  #container main #trending .content #next:hover {
+    content: url("../assets/icons/button-slider-right-hover.svg");
+  }
+  #container main #trending .content #next.dark {
+    content: url("../assets/icons/button-slider-right-md-noct.svg");
+  }
+  #container main #trending .content #galery .gif {
+    width: 357px;
+    height: 275px;
+    position: relative;
+    margin-top: 53px;
+    display: none;
+  }
+  #container main #trending .content #galery .gif:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #container main #trending .content #galery .gif:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #container main #trending .content #galery .gif:nth-child(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #container main #trending .content #galery .gif .over {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(87, 46, 229, 0.7);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #container main #trending .content #galery .gif .over .buttonGif {
+    display: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 10px;
+  }
+  #container main #trending .content #galery .gif .over .buttonGif .icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin-left: 10px;
+    opacity: 0.7;
+  }
+  #container main #trending .content #galery .gif .over .buttonGif .icon:hover {
+    opacity: unset;
+  }
+  #container main #trending .content #galery .gif .over .buttonGif .no-favorito {
+    background: url("../assets/icons/icon-fav.svg") no-repeat;
+    background-size: contain;
+  }
+  #container main #trending .content #galery .gif .over .buttonGif .favorito {
+    background: url("../assets/icons/icon-fav-active.svg") no-repeat;
+    background-size: contain;
+  }
+  #container main #trending .content #galery .gif .over .buttonGif .descarga {
+    background: url("../assets/icons/icon-download.svg") no-repeat;
+    background-size: contain;
+  }
+  #container main #trending .content #galery .gif .over .buttonGif .full {
+    background: url("../assets/icons/icon-max-normal.svg") no-repeat;
+    background-size: contain;
+  }
+  #container main #trending .content #galery .gif .over .infoGif {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 51px 18px;
+  }
+  #container main #trending .content #galery .gif .over .infoGif #user {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFF;
+    text-align: left;
+  }
+  #container main #trending .content #galery .gif .over .infoGif #title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    margin-top: 5px;
+  }
+  #container main #trending .content #galery .gif:hover .over {
+    width: 100%;
+    height: 100%;
+  }
+  #container main #trending .content #galery .gif:hover .over .buttonGif, #container main #trending .content #galery .gif:hover .over .infoGif {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #container main .fullOver {
+    background: #FFF;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #container main .fullOver .close {
+    margin-top: 66px;
+    margin-right: 278px;
+  }
+  #container main .fullOver .img-full {
+    width: 695px;
+    height: 385px;
+    margin-top: 160px;
+  }
+  #container main .fullOver .base {
+    width: 695px;
+    margin-top: 27px;
+  }
+  #container main .fullOver .base #string #pOne {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    text-align: left;
+  }
+  #container main .fullOver .base #string #pTwo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+    text-align: left;
+    margin-top: 6px;
+  }
+  #container main .fullOver .base #options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  #container main .fullOver .base #options .icon-full {
+    width: 36px;
+    height: 36px;
+    margin-left: 29px;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  #container main .fullOver .base #options #fav {
+    background: url("../assets/icons/icon-favoritos.svg") no-repeat;
+    background-size: contain;
+  }
+  #container main .fullOver .base #options #down {
+    background: url("../assets/icons/icon-download.svg") no-repeat;
+    background-size: contain;
+  }
+  #container footer {
+    height: 116px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #container footer .redes {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #container footer .redes #p1 {
+    padding-top: unset;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  #container footer .redes img {
+    padding-top: unset;
+    padding-left: 19px;
+  }
+  #container footer .redes img.dark:hover {
+    -webkit-filter: brightness(5);
+            filter: brightness(5);
+  }
+  #container footer .redes .redesIcon {
+    cursor: pointer;
+  }
+  #container footer .redes #facebook:hover {
+    content: url("../assets/icons/icon_facebook_hover.svg");
+  }
+  #container footer .redes #facebook.dark {
+    content: url("../assets/icons/icon_facebook_noc.svg");
+  }
+  #container footer .redes #twitter:hover {
+    content: url("../assets/icons/icon-twitter-hover.svg");
+  }
+  #container footer .redes #twitter.dark {
+    content: url("../assets/icons/icon_twitter_noc.svg");
+  }
+  #container footer .redes #instagram:hover {
+    content: url("../assets/icons/icon_instagram-hover.svg");
+  }
+  #container footer .redes #instagram.dark {
+    content: url("../assets/icons/icon_instagram_noc.svg");
+  }
+  #container footer #p2 {
+    font-size: 13px;
+    line-height: 15px;
+    margin-right: 158px;
+  }
+}
+
+#container {
+  width: 100%;
+  padding-top: 95px;
+}
+/*# sourceMappingURL=style.css.map */
