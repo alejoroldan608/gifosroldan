@@ -14,7 +14,7 @@ let clearGifos = () => {
         giphy.getGifsPorIds(storage.getIdsMisGifs()).then((gifsData) => {
             if(gifsData != null)
             gifsData.forEach(gifData => {
-                let nGif = new Gif(gifData.title, gifData.username, gifData.images.preview_gif.url, gifData.images.downsized_medium.url, gifData.id);
+                let nGif = new Gif(gifData.title, gifData.username, gifData.images.downsized_medium.url, gifData.images.downsized_medium.url, gifData.id);
                 showInit(nGif, container);
             });
         });

@@ -5,6 +5,7 @@ let clearCrearGifos = () => {
     container.classList.add('crearGifos');
     crearGifos(container);
 }
+var button;
 
 const crearGifos = (container) => {
     container.insertAdjacentHTML('beforeend',
@@ -14,9 +15,8 @@ const crearGifos = (container) => {
     </div>
     <div id="containerMisGifos1">
         <div id="pantalla">
-            <video id="video">
-
-            </video>
+            <video id="video"></video>
+            <img id="gifrec" class="hide"></img>
             <div id="esquinasSup">
                     <div id="supIzq" class="corner"></div>
                     <div id="supDer" class="corner"></div>
@@ -39,9 +39,30 @@ const crearGifos = (container) => {
         <h5 id="crono">00:00:00</h5>
         </div>
         <div id="linea"></div>
-        <button id="start" class="show" onclick="start()">COMENZAR</button>
+        <button id="start" class="show">COMENZAR</button>
     </div>
     <img id="cinta" class="light" src="./assets/icons/pelicula.svg" alt="Cinta">`);
+
+
+    button = document.getElementById('start');
+    button.addEventListener('click', () => {
+        switch (button.innerText) {
+            case 'COMENZAR':
+                start();                
+                break;
+            case 'GRABAR':
+                getGrabar();                
+                break;
+            case 'FINALIZAR':
+                getStop();             
+                break;
+            case 'SUBIR GIFO':
+                upLoadGif();                
+                break;
+            default:
+                break;
+        }
+    })
 }
 
 function getStreamAndRecord () { 
@@ -56,7 +77,6 @@ function getStreamAndRecord () {
 
         let stepOne = document.getElementById('one');
         let stepTwo = document.getElementById('two');
-        let button = document.getElementById('start');
         let string = document.getElementById('string');
         string.style.display = 'none';
         stepTwo.src = "./assets/icons/paso-a-paso-hover.svg";
@@ -64,14 +84,12 @@ function getStreamAndRecord () {
         button.classList.remove('hide');
         button.classList.add('show');
         button.innerText = 'GRABAR';
-        button.onclick = getGrabar;
     });
 }
 
 const start = () => {
     let h4 = document.getElementsByTagName('h4')[0];
     let pInfo = document.getElementsByTagName('p')[0];
-    let button = document.getElementById('start');
     let stepOne = document.getElementById('one');
 
     h4.textContent = "¿Nos das acceso a tu cámara?";
@@ -85,49 +103,37 @@ const start = () => {
 
 let recorder;
 
-const getGrabar = () => {
 
-    let crono = document.getElementById('crono');
-    let seconds = 0;
-    let minutes = 0;
-    let hours = 0;
-    let t;
+let seconds = 0;
+let minutes = 0;
+let hours = 0;
+var t;
 
-    function contar() {
-        seconds++;
-        if (seconds >= 60) {
-            seconds = 0;
-            minutes++;
-            if (minutes >= 60) {
-                minutes = 0;
-                hours++;
-            }
+function contar() {
+
+    seconds++;
+    if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
+        if (minutes >= 60) {
+            minutes = 0;
+            hours++;
         }
-        crono.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
-
-        timer();
     }
+    let crono = document.getElementById('crono');
+    crono.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
 
-    function timer() {
-        t = setTimeout(contar, 1000);
-    }
+}
 
-    let button = document.getElementById('start');
-    let video = document.getElementById('video');
-    button.innerText = 'FINALIZAR';
+const getGrabar = () => {
 
     recorder = RecordRTC(video.srcObject, {
         type: 'gif'
     });
 
+    t = setInterval(contar, 1000);
+    button.innerText = 'FINALIZAR';
     recorder.startRecording();
-
-    timer();
-
-    button.onclick = function () {
-        clearTimeout(t);
-        getStop();
-    }
 }
 
 function getStop() {
@@ -135,22 +141,41 @@ function getStop() {
         let blob = recorder.getBlob();
         let button = document.getElementById('start');
         let crono = document.getElementById('crono');
-
         button.innerText = 'SUBIR GIFO';
         crono.innerText = 'REPETIR CAPTURA';
-
-        button.addEventListener('click', () => {
-            upLoadGif(blob);
+        clearInterval(t);
+        let video = document.getElementById('video');
+        video.classList.add('hide');
+        let img = document.getElementById('gifrec');
+        img.src = URL.createObjectURL(blob);
+        img.classList.remove('hide');
+        crono.addEventListener('click', () =>{
+            video.classList.remove('hide');
+            img.classList.remove('show');
+            img.classList.add('hide');
+            button.innerText = 'GRABAR';
+            crono.innerText = '00:00:00';
+            seconds = 0;
+            minutes = 0;
+            hours = 0;                          
         })
     });
 }
 
-function upLoadGif(blob) {
-    giphy.guardarGiphy(blob).then(data => {
+function upLoadGif() {    
+
+    giphy.guardarGiphy(recorder.getBlob()).then(data => {
             let s = new MiStorage();
             s.setIdsMisGifs(data.id);
             console.log('Finalizó la carga');
+            button.innerText = 'GRABAR';
+            let crono = document.getElementById('crono');
+            crono.innerText = '00:00:00';
+            seconds = 0;
+            minutes = 0;
+            hours = 0;     
     });
+    
 
     let stepTwo = document.getElementById('two');
     let stepThree = document.getElementById('three');
