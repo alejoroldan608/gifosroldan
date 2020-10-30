@@ -173,8 +173,27 @@ function upLoadGif() {
             crono.innerText = '00:00:00';
             seconds = 0;
             minutes = 0;
-            hours = 0;     
+            hours = 0;
+            let pantalla = document.getElementById('pantalla');
+            pantalla.innerHTML+=    
+            `<div id="camara">
+            <img id="icondesc" class="light" src="./assets/icons/icon-download-hover.svg"></img>
+            <a href= 'https://giphy.com/gifs/${data.id}' target="_blank"> <img id="iconlink" class="light" src="./assets/icons/icon-link-hover.svg"></img></a>
+            </div>`;
+            
+let descarga = document.getElementById('icondesc');
+descarga.addEventListener('click', () => {
+    descargargif(recorder.getBlob());
+});
+
     });
+    function descargargif (file){
+        let a = document.createElement("a");
+        a.href = URL.createObjectURL(file);
+        a.download= 'migif.gif';
+        a.click();
+    }
+
     
 
     let stepTwo = document.getElementById('two');

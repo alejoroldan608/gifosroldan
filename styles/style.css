@@ -657,8 +657,48 @@
   width: 640px;
   height: 342px;
   position: absolute;
-  top: 119px;
-  right: 35px;
+  top: 120px;
+  left: 85px;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla #video, #pantalla img {
+  width: 520px;
+  height: 300px;
+  position: absolute;
+  top: 158px;
+  left: 169px;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla #iconlink.light {
+  width: 30px;
+  height: 300px;
+  position: absolute;
+  top: 42px;
+  left: 639px;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla #iconlink.dark {
+  width: 30px;
+  height: 300px;
+  position: absolute;
+  top: 42px;
+  left: 639px;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla #icondesc.light {
+  width: 30px;
+  height: 300px;
+  position: absolute;
+  top: 42px;
+  left: 600px;
+}
+
+#container main #inspirate #containerMisGifos1 #pantalla #icondesc.dark {
+  width: 30px;
+  height: 300px;
+  position: absolute;
+  top: 42px;
+  left: 600px;
 }
 
 #container main #inspirate #containerMisGifos1 #pantalla .corner {
@@ -722,14 +762,14 @@
 #container main #inspirate #containerMisGifos1 #pantalla #esquinasInf #infIzq {
   border-bottom: 2px solid #50E3C2;
   border-left: 2px solid #50E3C2;
-  margin-bottom: 20px;
+  margin-top: 300px;
   margin-left: 20px;
 }
 
 #container main #inspirate #containerMisGifos1 #pantalla #esquinasInf #infDer {
   border-bottom: 2px solid #50E3C2;
   border-right: 2px solid #50E3C2;
-  margin-bottom: 20px;
+  margin-top: 300px;
   margin-right: 20px;
 }
 
